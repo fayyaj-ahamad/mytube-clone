@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: #ece7e7;
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+}
+.container .btn{
+    padding:  6em 6.2em;
+    }
+    .container .btn button{
+        padding: 0.5vw 0vw;
+        width: 28%;
+        font-size: 1.2vw;
+        font-weight: 600;
+        color: #fff;
+        margin: 0.2em 0em;
+    }
+
+.container .signup{
+    background-color: rgb(43, 143, 43);
+}
+.container .login{
+    background-color: rgb(40, 201, 40);
+}
+
+.container .form{
+    padding: 0.8em;
+    border: 1px solid rgb(201, 200, 200);
+    border-radius: 0.2em;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+}
+
+.container .login-from{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+}
+
+
+.container .form .input{
+    display: flex;
+    width: 100%;
+}
+
+.container .form span{
+    width: 30%;
+    font-size: 0.8em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container .form .input input{
+    width: 100%;
+    padding: 0.2em;
+    margin: 0.2em 0em;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(148, 146, 146);
+}
+.container .form .input input[type="date"]{
+    width: 35%;
+}
+
+.container .form .submit-btn{
+    width: 100%;
+}
+.container .form .submit-btn button{
+    width: 100%;
+    padding: 0.5em 0em;
+    background-color: rgb(43, 143, 43);
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 1em;
+}
+
+
+.container .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .right-img{
+    width: 500px;
+    height: 500px;
+}
+
+.right .right-img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 991px){
+    .container{
+        display: flex;
+    }
+    .container .btn {
+        padding: 6em 4.4em;
+    }
+    
+    .container .btn button {
+        padding: 0.5rem 0rem;
+        width: 40%;
+        font-size: 1.4vw;
+    }
+}
+
+@media(max-width: 768px){
+    .container .form {
+        width: 40%;
+        position: absolute;
+        top: 42%;
+        left: 28%;
+    }
+    .container .login-from {
+        display: none;
+        position: absolute;
+        top: 37%;
+        left: 28%;
+    }
+    .container .btn {
+        padding: 6em 4em;
+    }
+    .right .right-img {
+        width: 400px;
+        height: 320px;
+        margin-top: -65px;
+    }
+    .right .right-img img{
+        width: 100%;
+        height:100%;
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        width: 100%;
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 100vh;
+    }
+    .container .btn {
+        padding: 1.5em 4em;
+    }
+
+    .container .btn button {
+        padding: 0.5rem 0rem;
+        width: 40%;
+        font-size: 2vw;
+    }
+    .container .form {
+        width: 80%;
+        position: absolute;
+        top: 34%;
+        left: 50%;
+    }
+    .container .login-from {
+        display: none;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+    }
+    .container .right {
+        width: 100%;
+    }
+    .right .right-img {
+        width: 400px;
+        height: 305px;
+    }
+}
+
+@media (max-width:480px) {
+    
+    .container .btn button {
+        font-size: 2.5vw;
+    }
+
+    .container .form {
+        position: absolute;
+        top: 32%;
+    }
+    .container .form .input input {
+        padding: 0.1em;
+        font-size: 0.9em;
+    }
+    .container .form .submit-btn button {
+        padding: 0.8em 0em;
+        font-size: 0.8rem;
+    }
+
+}

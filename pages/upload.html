@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+    <link rel="stylesheet" href="/css/upload.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <nav>
+                <div class="logo">
+                   <h1><i class="ri-youtube-fill"></i>MyTube<sup>IN</sup></h1>
+                </div>
+                <div class="search">
+                     <input type="search" placeholder="Search Item">
+                     <i class="ri-search-line"></i>
+                </div>
+                <div class="profile-btn">
+                    <button id="uploadBtn"><i class="ri-upload-line"></i></button>
+                    <button id="openProfile"><img src="/image/a.png" id="simg"/>
+                    </button>
+                </div> 
+            </nav>
+
+            <div class="userprofile">
+            </div>
+            
+            <div class="yVideo">
+                <table border="1">
+                    <thead>
+                          <tr>
+                            <th>S.R</th>
+                            <th>Image</th>
+                            <th>Description</th>
+                            <th>Author</th>
+                            <th>Action</th>
+                          </tr>
+                    </thead>
+                    <tbody class="video-list">
+                    </tbody>                 
+                </table>
+            </div>
+
+            <div class="uploadform" id="userOpenform">
+                <div class="closebtn">
+                    <div><button id="closeBtn">Closed</button></div>
+                </div>
+                <form class="submitBtn" >
+                    <div class="upload">
+                        <span>Video Thumb</span>
+                        <input type="file" required>
+                    </div>
+                    <div class="upload">
+                        <span>Video</span>
+                        <input type="file" required>
+                    </div>
+                    <div class="upload">
+                        <span>Title</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="upload">
+                        <span>Des.</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="submitBtn">
+                        <button type="submit">Upload</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+    <script src="/js/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+i{
+    font-size: 1.4rem;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+
+.container .main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container nav{
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 2px 0px rgb(227, 223, 223);
+    padding: 0rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container nav .logo{
+    width: 20%;
+    margin-left: 1.5em;
+
+}
+
+.container nav .logo h1{
+    font-size: 1.5rem;
+    font-style: arial;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: -2px;
+}
+
+.container nav .logo i{
+    color: red;
+    font-size:1.9rem;
+    text-align: center;
+}
+
+.container nav sup{
+    font-size: 0.8rem;
+    margin: 0.1rem 0.3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.container nav .search{
+    display: flex;
+    width: 30%;
+    height: 35px;
+}
+
+.container nav .search i{
+    border-top: 1px solid rgb(201, 200, 200);
+    border-right: 1px solid rgb(201, 200, 200);
+    border-bottom: 1px solid rgb(201, 200, 200);
+    border-radius: 0px 15px 15px 0px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    justify-content: center;
+    color: rgb(68, 67, 67);
+
+}
+.container nav .search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(201, 200, 200);
+    border-radius: 18px 0px 0px 18px;
+    padding: 5px 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.container nav .profile-btn{
+    display: flex;
+    margin: 0em 2em;
+    position: relative;
+
+}
+
+.container nav .profile-btn button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: inherit;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 0rem 1rem;
+    text-transform: uppercase;
+
+}
+
+.container nav .profile-btn img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.container .yVideo{
+    width: 60%;
+   margin: 0.2rem 10rem;
+}
+.container table{
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border: none;
+    outline: none;
+}
+
+
+.container table th, td{
+    text-align: center;
+    padding: 1rem 1.2rem;
+    border: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container table th{
+ border-bottom: 1px solid black;
+ background-color: rgb(1, 18, 18);
+ color: white;
+}
+
+.container table td{
+    border-bottom: 1px solid black;
+}
+
+.container table tr:nth-child(odd){
+    background-color: rgb(190, 181, 181);
+}
+
+.container table td .par{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.container tbody{
+    width: 100%;
+}
+.container table td button{
+    background-color: rgb(108, 18, 18);
+    padding: 0.5rem 0.8rem;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .uploadform{
+    display: none;
+    width: 400px;
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    transform: translate(-50%);
+    background-color: rgb(238, 235, 235);
+    border: 1px solid rgb(201, 200, 200);;
+    overflow: hidden;
+
+   
+}
+
+.container .uploadform .active{
+    display: block;
+    transform: scale(1);
+}
+
+.container .uploadform form{
+    margin: 2rem 0;
+    width: 100%;
+    padding: 2rem 0.5rem;
+    border-radius: 4px;
+    transition: all 1s ease-in;
+    z-index: 1;
+
+}
+
+.container .closebtn{
+    position: absolute;
+    top: 5%;
+    right: 8%;
+}
+.closebtn button{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+}
+
+.container .uploadform .upload{
+    width: 100%;
+    display: flex;
+    padding-top: 0.5rem;
+}
+
+.container .upload span{
+    margin: 0.2rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    color: #111;
+
+}
+
+.container .uploadform .upload input{
+    width: 80%;
+    padding: 0.1rem 0.4rem;
+    outline: none;
+    border: none;
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: whitesmoke;
+}
+
+.container .uploadform .upload input[type="file"]{
+    outline: none;
+}
+
+.container .uploadform .submitBtn button{
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    background-color: #292828;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.container .userprofile{
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    width: 200px;
+    padding: 10px;
+    color: black;
+    background-color: #f1f1f1;
+    z-index: 2;
+    transition: all 1s;
+}
+
+.container .userprofile h4{
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    border-bottom: 0.1rem solid black;
+
+}
+
+.container .userprofile a{
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+    border-bottom: 0.1rem solid black;
+}
+
+.container .userprofile button{
+    padding: 0.4rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    border: 2px solid;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.container .active{
+    display: block;
+}
+
+@media(max-width: 991px){
+    .container table {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    .container nav .profile-btn {
+        margin: 0em 0em;
+    }
+    .container nav .profile-btn button {
+        padding: 0rem 0.5rem
+    }
+    .container nav {
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+    }
+    .container nav .search {
+        width: 40%;
+    }
+    .container table {
+        width: 100%;
+    }
+}
+
+@media(max-width: 643px){
+    .container nav .profile-btn {
+        margin: 0em 0em;
+    }
+    .container nav .profile-btn button {
+        padding: 0rem 0.5rem
+    }
+    .container .yVideo {
+        margin: 0rem 1em;
+    }
+    .container table {
+        width: 100%;
+    }
+    
+}
+
+@media(max-width: 576px){
+    .container nav .profile-btn {
+        margin: 0em 0em;
+    }
+    .container nav .profile-btn button {
+        padding: 0rem 0.5rem
+    }
+    .container nav{
+        padding: 0em 0em;
+    }
+
+    sup{
+        display: none;
+    }
+    .container nav .logo {
+        width: 15%;
+        margin-left: 0.5em;
+    }
+    .container nav .logo h1 {
+        font-size: 1.2rem;
+        letter-spacing: -0.1rem;
+    }
+    .container nav .logo i {
+        color: red;
+        font-size: 1.2rem;
+    }
+    .container .yVideo {
+        margin: 0rem 0.8em;
+    }
+    .container table {
+        width: 100%;
+    }
+    .container tbody{
+        width: 100%;
+    }
+    .container table th, td {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .container .active {
+        position: fixed;
+        top: 10%;
+        right: 1%;
+    }
+
+    .container .uploadform {
+        position: absolute;
+        top: 50%;
+    }
+
+}
+
+@media(max-width: 535px){
+    .container nav .profile-btn {
+        margin: 0em 0em;
+    }
+    .container nav .profile-btn button {
+        padding: 0rem 0.5rem
+    }
+    .container nav .logo{
+        width: 25%;
+    }
+    .container nav .logo h1 {
+        letter-spacing: -0.1rem;
+    }
+    .container nav sup {
+        font-size: 0.7rem;
+    }
+    .container table th, td {
+        padding: 0.8rem 0.8rem;
+        font-size: 1rem;
+    }
+    .container .active {
+        position: fixed;
+        top: 10%;
+        right: 1%;
+    }
+}
+@media(max-width: 504px){
+    .container nav .profile-btn {
+        margin: 0em 0em;
+    }
+    .container nav .profile-btn button {
+        padding: 0rem 0.5rem
+    }
+    i {
+        font-size: 1.2em;
+    }
+    .container nav .logo {
+        width: 26%;
+        margin-left: 0.5em;
+    }
+    .container .active {
+        position: fixed;
+        top: 10%;
+        right: 1%;
+    }
+.container nav .logo h1 {
+    font-size: 1.2rem;
+}
+.container nav .logo i {
+    color: red;
+    font-size: 1.2rem;
+}
+    .container nav sup {
+        font-size: 0.6rem;
+    }
+    .container table th, td {
+        padding: 0.8rem 0.6rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:480px) {
+    .container nav .profile-btn {
+        margin: 0em 0em;
+    }
+    .container nav .profile-btn button {
+        padding: 0rem 0.5rem
+    }
+    .container nav .logo {
+        width: 25%;
+        margin-left: 0.8em;
+    }
+    i {
+        font-size: 1.2rem;
+    }
+    .container nav .search i {
+        width: 50px; 
+        font-size: 1rem;
+    }
+    .container table th, td {
+        padding: 0.8rem 0.4rem;
+        font-size: 1rem;
+    }
+    .container table td .par {
+        padding: 0rem 0.8rem;
+        font-size: 1rem;
+    }
+    .container .active {
+        position: fixed;
+        top: 10%;
+        right: 1%;
+    }
+}
+@media (max-width:320px){
+    .container table th, td {
+        padding: 0.8rem 0.2rem;
+        font-size: 0.4rem;
+    }
+    .container .active {
+        position: fixed;
+        top: 10%;
+        right: 1%;
+    }
+}

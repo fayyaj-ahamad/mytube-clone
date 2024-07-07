@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>MyTube</title>
+</head>
+<body>
+    <div class="container"> 
+      <div class="left">
+        <div class="btn">
+            <button class="signup">Signup</button>
+            <button class="login">Login</button>
+        </div>
+
+        <div class="form" id="signup">
+            <form id="userSignupForm">
+                <div class="input">
+                    <span for="">Image</span>
+                    <input type="file" placeholder="Enter Your Image" />
+                </div>
+                <div class="input">
+                    <span for="">First Name</span>
+                    <input type="text" placeholder="Enter Your Name" required />
+                </div>
+                
+                <div class="input">
+                    <span for="">Email</span>
+                    <input type="email" placeholder="Enter Your Name" required />
+                </div>
+                <div class="input">
+                    <span for="">Password</span>
+                    <input type="password" placeholder="Enter Your Password" required //>
+                </div>
+                <div class="input">
+                    <span for="">Mobile Nu.</span>
+                    <input type="text" placeholder="Enter Your MobileNumber" required />
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" id="sBtn">Signup</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="form login-from" id="login">
+            <form id="Lform">
+                <div class="input">
+                    <span for="">Email</span>
+                    <input type="email" placeholder="Enter Your Name">
+                </div>
+                <div class="input">
+                    <span for="">Password</span>
+                    <input type="password" placeholder="Enter Your Password">
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" id="Lbtn">Login</button>
+                </div>
+            </form>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-img">
+            <img src="/image/signup.png" alt="" id="changeImg">
+        </div>
+      </div>
+    </div>
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+    <script src="/js/signup.js"></script>
+</body>
+</html>
